@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mobile Code Editor - Developer Tools</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/6.65.7/codemirror.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/6.65.7/theme/dracula.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="manifest" href="manifest.json">
+</head>
+<body>
+    <div class="app-container">
+        <!-- Header -->
+        <header class="header">
+            <div class="header-left">
+                <button class="menu-btn" onclick="toggleSidebar()">
+                    <i class="fas fa-bars"></i>
+                </button>
+                <h1 class="app-title">Code Editor</h1>
+            </div>
+            <div class="header-right">
+                <button class="btn btn-primary" onclick="saveFile()">
+                    <i class="fas fa-save"></i> Save
+                </button>
+                <button class="btn btn-secondary" onclick="runCode()">
+                    <i class="fas fa-play"></i> Run
+                </button>
+            </div>
+        </header>
+
+        <!-- Sidebar -->
+        <aside class="sidebar" id="sidebar">
+            <div class="sidebar-header">
+                <h3><i class="fas fa-folder"></i> Files</h3>
+                <button class="btn btn-small" onclick="createNewFile()">
+                    <i class="fas fa-plus"></i> New
+                </button>
+            </div>
+            
+            <div class="file-upload">
+                <input type="file" id="fileInput" multiple accept=".js,.html,.css,.php,.py,.java,.cpp,.c,.txt,.json,.xml,.md" onchange="handleFileUpload(event)">
+                <label for="fileInput" class="upload-btn">
+                    <i class="fas fa-upload"></i> Upload Files
+                </label>
+            </div>
+
+            <div class="file-tree" id="fileTree">
+                <!-- File tree will be populated here -->
+            </div>
+        </aside>
+
+        <!-- Main Content -->
+        <main class="main-content">
+            <div class="editor-container">
+                <div class="tabs-container" id="tabsContainer">
+                    <div class="tab active" data-file="welcome.md">
+                        <span class="tab-name">Welcome</span>
+                        <button class="close-tab" onclick="closeTab('welcome.md')">&times;</button>
+                    </div>
+                </div>
+                
+                <div class="editor-wrapper">
+                    <textarea id="codeEditor" placeholder="Welcome to Mobile Code Editor!
+
+Features:
+- Syntax highlighting for multiple languages
+- Mobile-optimized interface for Kiwi Browser
+- File management and editing
+- Code execution preview
+- Responsive design
+
+Start by uploading a file or creating a new one!"></textarea>
+                </div>
+            </div>
+
+            <!-- Output Panel -->
+            <div class="output-panel" id="outputPanel">
+                <div class="output-header">
+                    <h4><i class="fas fa-terminal"></i> Output</h4>
+                    <button class="btn btn-small" onclick="clearOutput()">
+                        <i class="fas fa-trash"></i> Clear
+                    </button>
+                </div>
+                <div class="output-content" id="outputContent">
+                    <div class="output-message">Ready to run code...</div>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <!-- Context Menu -->
+    <div class="context-menu" id="contextMenu">
+        <div class="context-item" onclick="renameFile()">
+            <i class="fas fa-edit"></i> Rename
+        </div>
+        <div class="context-item" onclick="deleteFile()">
+            <i class="fas fa-trash"></i> Delete
+        </div>
+        <div class="context-item" onclick="downloadFile()">
+            <i class="fas fa-download"></i> Download
+        </div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/6.65.7/codemirror.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/6.65.7/mode/javascript/javascript.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/6.65.7/mode/css/css.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/6.65.7/mode/xml/xml.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/6.65.7/mode/php/php.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/6.65.7/mode/python/python.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/6.65.7/mode/clike/clike.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/6.65.7/mode/markdown/markdown.min.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>

@@ -1,0 +1,51 @@
+{
+  "name": "Mobile Code Editor",
+  "short_name": "CodeEditor",
+  "description": "A mobile-optimized code editor for Kiwi Browser with syntax highlighting and file management",
+  "version": "1.0.0",
+  "start_url": "./index.html",
+  "display": "standalone",
+  "orientation": "any",
+  "theme_color": "#1e1e1e",
+  "background_color": "#2d2d2d",
+  "lang": "en-US",
+  "scope": "./",
+  "icons": [
+    {
+      "src": "data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTkyIiBoZWlnaHQ9IjE5MiIgdmlld0JveD0iMCAwIDE5MiAxOTIiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjxyZWN0IHdpZHRoPSIxOTIiIGhlaWdodD0iMTkyIiByeD0iMjQiIGZpbGw9IiMxZTFlMWUiLz4KPHBhdGggZD0iTTQ4IDQ4SDE0NFY3MkgxNDBWNjhIODRWNzJIODBWNzJINzJWNzJINDhWNDhaIiBmaWxsPSIjNGZjM2Y3Ii8+CjxwYXRoIGQ9Ik00OCA4NEgxNDRWMTA4SDE0MFYxMDRIODRWMTA4SDgwVjEwOEg3MlYxMDhINDhWODRaIiBmaWxsPSIjNGZjM2Y3Ii8+CjxwYXRoIGQ9Ik00OCAxMjBIMTQ0VjE0NEgxNDBWMTQwSDg0VjE0NEg4MFYxNDRINzJWMTQ0SDQ4VjEyMFoiIGZpbGw9IiM0ZmMzZjciLz4KPHBhdGggZD0iTTU2IDU2SDE0NEgxNDRWMTM2SDU2VjU2WiIgZmlsbD0iIzJkMmQyZCIvPgo8cGF0aCBkPSJNNjQgNzJINzJWODBINjRWNzJaIiBmaWxsPSIjNjZiYjZhIi8+CjxwYXRoIGQ9Ik04MCA3Mkg5NlY4MEg4MFY3MloiIGZpbGw9IiM2NmJiNmEiLz4KPHBhdGggZD0iTTY0IDk2SDcyVjEwNEg2NFY5NloiIGZpbGw9IiM2NmJiNmEiLz4KPHBhdGggZD0iTTgwIDk2SDk2VjEwNEg4MFY5NloiIGZpbGw9IiM2NmJiNmEiLz4KPHBhdGggZD0iTTY0IDEyMEg3MlYxMjhINjRWMTIwWiIgZmlsbD0iIzY2YmI2YSIvPgo8cGF0aCBkPSJNODAgMTIwSDk2VjEyOEg4MFYxMjBaIiBmaWxsPSIjNjZiYjZhIi8+CjxwYXRoIGQ9Ik0xMTIgNzJIMTM2VjgwSDExMlY3MloiIGZpbGw9IiNmZmZmZmYiLz4KPHBhdGggZD0iTTExMiA5NkgxMzZWMTA0SDExMlY5NloiIGZpbGw9IiNmZmZmZmYiLz4KPHBhdGggZD0iTTExMiAxMjBIMTM2VjEyOEgxMTJWMTIwWiIgZmlsbD0iI2ZmZmZmZiIvPgo8L3N2Zz4K",
+      "sizes": "192x192",
+      "type": "image/svg+xml"
+    },
+    {
+      "src": "data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNTEyIiBoZWlnaHQ9IjUxMiIgdmlld0JveD0iMCAwIDUxMiA1MTIiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjxyZWN0IHdpZHRoPSI1MTIiIGhlaWdodD0iNTEyIiByeD0iNjQiIGZpbGw9IiMxZTFlMWUiLz4KPHBhdGggZD0iTTEyOCAxMjhIMzg0VjE5Mkg0MDBWMTc2SDIyNFYxOTJIMjEyVjE5MkgxOTJWMTkySDEyOFYxMjhaIiBmaWxsPSIjNGZjM2Y3Ii8+CjxwYXRoIGQ9Ik0xMjggMjI0SDM4NFYyODhINDAwVjI3MkgyMjRWMjg4SDIxMlYyODhIMTkyVjI4OEgxMjhWMjI0WiIgZmlsbD0iIzRmYzNmNyIvPgo8cGF0aCBkPSJNMTI4IDMyMEgzODRWMzg0SDQwMFYzNjhIMjI0VjM4NEgyMTJWMzg0SDE5MlYzODRIMTI4VjMyMFoiIGZpbGw9IiM0ZmMzZjciLz4KPHBhdGggZD0iTTE0OCAxNDhIMzg0SDM4NFYzNjRIMTQ4VjE0OFoiIGZpbGw9IiMyZDJkMmQiLz4KPHBhdGggZD0iTTE3MiAxOTJIMTk2VjIxNkgxNzJWMTkyWiIgZmlsbD0iIzY2YmI2YSIvPgo8cGF0aCBkPSJNMjEyIDE5MkgyNTZWMjE2SDIxMlYxOTJaIiBmaWxsPSIjNjZiYjZhIi8+CjxwYXRoIGQ9Ik0xNzIgMjU2SDE5NlYyODBIMTcyVjI1NloiIGZpbGw9IiM2NmJiNmEiLz4KPHBhdGggZD0iTTIxMiAyNTZIMjU2VjI4MEgyMTJWMjU2WiIgZmlsbD0iIzY2YmI2YSIvPgo8cGF0aCBkPSJNMTcyIDMyMEgxOTZWMzQ0SDE3MlYzMjBaIiBmaWxsPSIjNjZiYjZhIi8+CjxwYXRoIGQ9Ik0yMTIgMzIwSDI1NlYzNDRIMTI5VjMyMFoiIGZpbGw9IiM2NmJiNmEiLz4KPHBhdGggZD0iTTI5NiAxOTJIMzY0VjIxNkgyOTZWMTkyWiIgZmlsbD0iI2ZmZmZmZiIvPgo8cGF0aCBkPSJNMjk2IDI1NkgzNjRWMjgwSDI5NlYyNTZaIiBmaWxsPSIjZmZmZmZmIi8+CjxwYXRoIGQ9Ik0yOTYgMzIwSDM2NFYzNDRIMjk2VjMyMFoiIGZpbGw9IiNmZmZmZmYiLz4KPC9zdmc+Cg==",
+      "sizes": "512x512",
+      "type": "image/svg+xml"
+    }
+  ],
+  "categories": ["developer", "productivity", "utilities"],
+  "screenshots": [
+    {
+      "src": "data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMzIwIiBoZWlnaHQ9IjU2OCIgdmlld0JveD0iMCAwIDMyMCA1NjgiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjxyZWN0IHdpZHRoPSIzMjAiIGhlaWdodD0iNTY4IiBmaWxsPSIjMWUxZTFlIi8+CjxyZWN0IHg9IjAiIHk9IjAiIHdpZHRoPSIzMjAiIGhlaWdodD0iNjAiIGZpbGw9IiMyZDJkMmQiLz4KPHRleHQgeD0iMTYwIiB5PSIzNSIgZmlsbD0iIzRmYzNmNyIgdGV4dC1hbmNob3I9Im1pZGRsZSIgZm9udC1mYW1pbHk9IkFyaWFsIiBmb250LXNpemU9IjE2Ij5Db2RlIEVkaXRvcjwvdGV4dD4KPHJlY3QgeD0iMTAiIHk9IjEwIiB3aWR0aD0iMjAiIGhlaWdodD0iNDAiIGZpbGw9IiMzZDNkM2QiLz4KPHJlY3QgeD0iMjI1IiB5PSIxNSIgd2lkdGg9IjQwIiBoZWlnaHQ9IjMwIiBmaWxsPSIjNGZjM2Y3Ii8+CjxyZWN0IHg9IjI3MCIgeT0iMTUiIHdpZHRoPSI0MCIgaGVpZ2h0PSIzMCIgZmlsbD0iIzY2YmI2YSIvPgo8cmVjdCB4PSIwIiB5PSI2MCIgd2lkdGg9IjMyMCIgaGVpZ2h0PSI0MCIgZmlsbD0iIzJkMmQyZCIvPgo8dGV4dCB4PSIxNjAiIHk9Ijg1IiBmaWxsPSIjZTBlMGUwIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBmb250LWZhbWlseT0iQXJpYWwiIGZvbnQtc2l6ZT0iMTIiPldlbGNvbWUubWQ8L3RleHQ+CjxyZWN0IHg9IjAiIHk9IjEwMCIgd2lkdGg9IjMyMCIgaGVpZ2h0PSI0NjgiIGZpbGw9IiMxZTFlMWUiLz4KPHRleHQgeD0iMTAiIHk9IjEzMCIgZmlsbD0iIzRmYzNmNyIgZm9udC1mYW1pbHk9Im1vbm9zcGFjZSIgZm9udC1zaXplPSIxMiI+IyBXZWxjb21lIHRvIE1vYmlsZSBDb2RlIEVkaXRvcjwvdGV4dD4KPHRleHQgeD0iMTAiIHk9IjE2MCIgZmlsbD0iI2UwZTBlMCIgZm9udC1mYW1pbHk9Im1vbm9zcGFjZSIgZm9udC1zaXplPSIxMiI+CjxwYXRoIGQ9Ik0xMCAxODAgSDMxMCIgc3Ryb2tlPSIjM2QzZDNkIiBzdHJva2Utd2lkdGg9IjEiLz4KPC9zdmc+Cg==",
+      "sizes": "320x568",
+      "type": "image/svg+xml",
+      "form_factor": "narrow"
+    }
+  ],
+  "shortcuts": [
+    {
+      "name": "New File",
+      "short_name": "New",
+      "description": "Create a new file",
+      "url": "./index.html?action=new",
+      "icons": [
+        {
+          "src": "data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTkyIiBoZWlnaHQ9IjE5MiIgdmlld0JveD0iMCAwIDE5MiAxOTIiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjxyZWN0IHdpZHRoPSIxOTIiIGhlaWdodD0iMTkyIiByeD0iMjQiIGZpbGw9IiM0ZmMzZjciLz4KPHBhdGggZD0iTTk2IDY0VjEyOE04MCA5NkgxMTIiIHN0cm9rZT0iIzFlMWUxZSIgc3Ryb2tlLXdpZHRoPSI4IiBzdHJva2UtbGluZWNhcD0icm91bmQiLz4KPC9zdmc+Cg==",
+          "sizes": "192x192",
+          "type": "image/svg+xml"
+        }
+      ]
+    }
+  ],
+  "related_applications": [],
+  "prefer_related_applications": false
+}
